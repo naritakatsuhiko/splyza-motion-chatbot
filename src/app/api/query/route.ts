@@ -21,7 +21,7 @@ export async function POST(req: Request) {
       if (file.endsWith(".md")) {
         const content = fs.readFileSync(path.join(knowledgeDir, file), "utf-8");
         if (file.includes("System_Prompt")) systemPrompt = content;
-        else knowledgeBase += `\n--- FILE: ${file} ---\n${content}\n`;
+        else knowledgeBase += `\n<document title="${file}">\n${content}\n</document>\n`;
       }
     });
 
