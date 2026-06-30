@@ -18,7 +18,8 @@ export async function POST(req: Request) {
     let knowledgeBase = "";
 
     files.forEach((file) => {
-      if (file.endsWith(".md")) {
+      // EXCLUDED_CONTENTS.mdは開発者・管理者向けの除外リストであるため、チャットボットのナレッジからはスキップ
+      if (file.endsWith(".md") && file !== "EXCLUDED_CONTENTS.md") {
         const content = fs.readFileSync(path.join(knowledgeDir, file), "utf-8");
         if (file.includes("System_Prompt")) systemPrompt = content;
         else knowledgeBase += `\n<document title="${file}">\n${content}\n</document>\n`;
