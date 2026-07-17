@@ -27,7 +27,7 @@ export async function POST(req: Request) {
     });
 
     // 2. APIエンドポイントの設定
-    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${apiKey}`;
 
     const payload = {
       system_instruction: { parts: [{ text: systemPrompt }] },

@@ -16,7 +16,7 @@
   - 正確な一次情報の提供
 
 ## 2. 技術仕様
-- **基盤モデル**: Gemini 3.0 Flash (`gemini-3-flash-preview`)
+- **基盤モデル**: Gemini 3.5 Flash (`gemini-3.5-flash`)
 - **アーキテクチャ**: Next.js 15 (App Router)
 - **APIエンドポイント**: Google AI Studio / Google Cloud Vertex AI (v1beta)
 - **回答生成パラメータ**:
@@ -72,7 +72,7 @@
 - **モデル更新**: `src/app/api/query/route.ts` 内のモデルIDを書き換えることで、最新世代のAIへ移行可能
 
 ## 5. 検証済みテストケース（質問集）
-最新の Gemini 3.0 Flash モデルにおいて、以下の質問に対する正常な挙動を確認済みです。
+最新の Gemini 3.5 Flash モデルにおいて、以下の質問に対する正常な挙動を確認済みです。
 
 ### A. 製品仕様・操作に関する質問
 1. SPLYZA Motionを使い始めるための手順を教えてください。
