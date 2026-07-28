@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "SPLYZA Chatbot",
-  description: "SPLYZA Support Chatbot",
+  title: "SPLYZA Motion Medical Chatbot",
+  description: "SPLYZA Motion Medical Support Chatbot",
 };
 
 export default function RootLayout({

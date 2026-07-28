@@ -4,3 +4,11 @@ node_modules
 .env
 *.log
 build
+.venv/
+.DS_Store
+*.DS_Store
+test_results/
+pdfs/_extracted/
+pdfs/_ocr/
+pdfs/_combined/
+pdfs/_preview/
