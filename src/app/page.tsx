@@ -53,7 +53,7 @@ export default function MotionChat() {
       
       // Gemini API の制限（429: Quota Exceeded）を判定してメッセージを差し替え
       if (errorStr.includes("429") || errorStr.includes("quota") || errorStr.includes("resource_exhausted")) {
-        errorMessage = "申し訳ありません。ただいまアクセスが集中しており、回答を生成できません。\n\n少し待ってから再度お試しいただくか、お急ぎの場合は以下のサポート窓口までお問い合わせください。\n\n▼SPLYZAカスタマーサポート\nmotion.medical@splyza.com";
+        errorMessage = "申し訳ありません。ただいまアクセスが集中しており、回答を生成できません。\n\n少し待ってから再度お試しいただくか、お急ぎの場合は以下のサポート窓口までお問い合わせください。\n\n▼SPLYZAカスタマーサポート\nmotion.support@splyza.com";
       } else {
         errorMessage = `エラーが発生しました: ${error.message || "予期せぬエラー"}`;
       }
@@ -160,13 +160,13 @@ export default function MotionChat() {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh', width: '100%', backgroundColor: '#ffffff', color: '#333333', fontFamily: '"Inter", "Segoe UI", sans-serif', position: 'relative', overflow: 'hidden' }}>
       <div style={{ position: 'absolute', top: '16px', left: '16px', fontSize: '12px', color: '#999999', zIndex: 10 }}>
-        SPLYZA Motion Medical
+        SPLYZA Motion
       </div>
       <div ref={scrollRef} style={{ flex: 1, overflowY: 'auto', width: '100%', maxWidth: '768px', margin: '0 auto', padding: '80px 16px 140px 16px', boxSizing: 'border-box' }}>
         {messages.length === 0 ? (
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh', textAlign: 'center' }}>
             <div style={{ marginBottom: '24px' }}>
-              <img src="/assets/motion_logo.png" alt="SPLYZA Motion Medical Logo" style={{ width: '120px', height: 'auto', margin: '0 auto', opacity: 0.9 }} />
+              <img src="/assets/motion_logo.png" alt="SPLYZA Motion Logo" style={{ width: '120px', height: 'auto', margin: '0 auto', opacity: 0.9 }} />
             </div>
             <h1 style={{ fontSize: '20px', fontWeight: '600', color: '#444444' }}>お手伝いできることはありますか？</h1>
             {renderInputForm(true)}
