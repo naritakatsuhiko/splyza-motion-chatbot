@@ -274,6 +274,19 @@ https://dev.classmethod.jp/articles/convert-coordinates/
 
 ---
 
+### Q. 各関節の正方向は？（内転がプラス？マイナス？）
+
+参照軸系はISBに準拠との記載がありますが、出力値における adduction/abduction、internal/external rotation の正負規約を明示いただけますでしょうか。
+
+**A.** 以下の通りです。
+
+- **adduction（内転、内反）**: 負（マイナス）
+- **abduction（外転、外反）**: 正（プラス）
+- **internal rotation（内旋）**: 負（マイナス）
+- **external rotation（外旋）**: 正（プラス）
+
+---
+
 ### Q. 胸椎と腰椎の角度は、どのような軸を基に算出しているのでしょうか？
 
 **A.** 胸椎、腰椎それぞれにフィットする円弧を抽出し、その角度（deg）を表示しています。
