@@ -7,7 +7,7 @@
 | No | 質問内容 | 期待される回答のポイント | 参照ファイル |
 |:---|:---|:---|:---|
 | 1 | SPLYZA Motionを使い始めるための手順を教えてください。 | アカウント作成、利用申し込み、アプリのインストール、ログインの4ステップを案内すること。 | 01_Help_Center_Basic_Usage.md |
-| 2 | 解析する動画の長さに制限はありますか？ | 最大20秒までであること。短いほど処理が早いこと。 | 02_Help_Center_Video_Preparation.md / 10_Help_Center_FAQ.md |
+| 2 | 解析する動画の長さに制限はありますか？ | 時間の制限はないこと。短い動画ほど処理が早いこと。 | 02_Help_Center_Video_Preparation.md / 10_Help_Center_FAQ.md |
 | 3 | 撮影時の端末の向きに指定はありますか？ | 横向き（横画面）を推奨していること。 | 02_Help_Center_Video_Preparation.md / 10_Help_Center_FAQ.md |
 | 4 | 認識できる道具にはどのようなものがありますか？ | ゴルフクラブ、野球のバット、テニスラケット、バーベルシャフトの4つを挙げること。 | 02_Help_Center_Video_Preparation.md / 10_Help_Center_FAQ.md |
 | 5 | 3次元認識をするために必要な動画の長さはどれくらいですか？ | 3秒程度（30fps）の長さが必要であること。 | 02_Help_Center_Video_Preparation.md / 10_Help_Center_FAQ.md |
